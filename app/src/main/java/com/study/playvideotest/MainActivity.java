@@ -22,16 +22,16 @@ public class MainActivity extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        play = (Button) findViewById(R.id.play);
-        play.setOnClickListener(this);
+        //play = (Button) findViewById(R.id.play);
+        //play.setOnClickListener(this);
 
-        pause = (Button) findViewById(R.id.pause);
-        pause.setOnClickListener(this);
+        //pause = (Button) findViewById(R.id.pause);
+        //pause.setOnClickListener(this);
 
-        stop = (Button) findViewById(R.id.stop);
-        stop.setOnClickListener(this);
+        //stop = (Button) findViewById(R.id.stop);
+        //stop.setOnClickListener(this);
 
-        videoView = (VideoView) findViewById(R.id.video_view);
+        //videoView = (VideoView) findViewById(R.id.video_view);
 
         //initVideoPath();
     }
