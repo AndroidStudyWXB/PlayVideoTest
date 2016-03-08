@@ -3,6 +3,7 @@ package com.study.playvideotest;
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -22,18 +23,18 @@ public class MainActivity extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //play = (Button) findViewById(R.id.play);
+        play = (Button) findViewById(R.id.play);
         //play.setOnClickListener(this);
 
-        //pause = (Button) findViewById(R.id.pause);
+        pause = (Button) findViewById(R.id.pause);
         //pause.setOnClickListener(this);
 
-        //stop = (Button) findViewById(R.id.stop);
+        stop = (Button) findViewById(R.id.stop);
         //stop.setOnClickListener(this);
 
-        //videoView = (VideoView) findViewById(R.id.video_view);
+        videoView = (VideoView) findViewById(R.id.video_view);
 
-        //initVideoPath();
+        initVideoPath();
     }
 
     private void initVideoPath() {
@@ -42,7 +43,8 @@ public class MainActivity extends Activity implements View.OnClickListener{
             Toast.makeText(this, file.getPath().toString(), Toast.LENGTH_LONG).show();
             videoView.setVideoPath(file.getPath());
         } catch (Exception e) {
-            e.printStackTrace();
+            //e.printStackTrace();
+            Log.d("FUCK", "FUCK");
         }
     }
 
